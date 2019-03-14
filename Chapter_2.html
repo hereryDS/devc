@@ -12,20 +12,21 @@
         var nilaiII=parseInt(prompt('Angka Kedua'));
         var operator=prompt('Operator: Tambah(+), Kurang(-), Kali(*), Bagi(/), Pangkat(^),Min,Max');
         if(operator=='Tambah' || operator=='+'){
-           alert('Hasil ='+(nilaiI+nilaiII));
-		}else if(operator=='Kurang' || operator=='-'){
-           alert('Hasil ='+(nilaiI-nilaiII));
+            alert('Hasil ='+(nilaiI+nilaiII));
+        }else if(operator=='Kurang' || operator=='-'){
+            alert('Hasil ='+(nilaiI-nilaiII));
         }else if(operator=='Bagi' || operator=='/'){
-           alert('Hasil ='+(nilaiI/nilaiII));
+            alert('Hasil ='+(nilaiI/nilaiII));
         }else if(operator=='Kali' || operator=='*'){
-           alert('Hasil ='+(nilaiI*nilaiII));
+            alert('Hasil ='+(nilaiI*nilaiII));
         }else if(operator=='Pangkat' || operator=='^'){
-           alert('Hasil ='+(pow(nilaiI,nilaiII)));
+            console.log('Hasil ='+(Math.pow(nilaiI,nilaiII)));
+            alert('Hasil ='+(Math.pow(nilaiI,nilaiII)));
         }else if(operator=='Min'){
-           alert('Hasil ='+(min(nilaiI,nilaiII)));
+            alert('Hasil ='+(Math.min(nilaiI,nilaiII)));
         }
         else if(operator=='Max'){
-           alert('Hasil ='+(Max(nilaiI,nilaiII)));
+            alert('Hasil ='+(Math.max(nilaiI,nilaiII)));
         }
 
 	</script>
