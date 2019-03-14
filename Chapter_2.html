@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Calculator
+	</title>
+</head>
+<body>
+	<h1>Looping</h1>
+	<script type="text/javascript">
+        var nilaiI=parseInt(prompt('Angka Pertama'));
+        var nilaiII=parseInt(prompt('Angka Kedua'));
+        var operator=prompt('Operator: Tambah(+), Kurang(-), Kali(*), Bagi(/), Pangkat(^),Min,Max');
+        if(operator=='Tambah' || operator=='+'){
+           alert('Hasil ='+(nilaiI+nilaiII));
+		}else if(operator=='Kurang' || operator=='-'){
+           alert('Hasil ='+(nilaiI-nilaiII));
+        }else if(operator=='Bagi' || operator=='/'){
+           alert('Hasil ='+(nilaiI/nilaiII));
+        }else if(operator=='Kali' || operator=='*'){
+           alert('Hasil ='+(nilaiI*nilaiII));
+        }else if(operator=='Pangkat' || operator=='^'){
+           alert('Hasil ='+(pow(nilaiI,nilaiII)));
+        }else if(operator=='Min'){
+           alert('Hasil ='+(min(nilaiI,nilaiII)));
+        }
+        else if(operator=='Max'){
+           alert('Hasil ='+(Max(nilaiI,nilaiII)));
+        }
+
+	</script>
+</body>
+</html>
