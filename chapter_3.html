@@ -4,15 +4,7 @@
 	<title>Array</title>
 </head>
 <body>
-	<table border="1">
-		<tr>
-			<th>No</th>
-			<th>Name</th>
-			<th>rotation_period</th>
-		</tr>
-		<tr id="data">
-		</tr>
-	</table>
+	<p id="dataPlanet">
 </body>
 <script type="text/javascript">
 	var planets=[
@@ -240,15 +232,18 @@
 
     console.log('No | Name | Diameter |Climate | population')
 	var no =1;
-	var data="";
+	var data="<table border=1><tr><th>No</th><th>Name</th><th>Diameter</th><th>Climate</th><th>population</th></tr>";
 	planets.forEach(function (planet) {
-		console.log(no+'|'+ planet.name +'|'+ planet.diameter +'|'+ planet.Climate +'|'+ planet.population);
+		console.log(no+'|'+ planet.name +'|'+ planet.diameter +'|'+ planet.climate +'|'+ planet.population);
 		data+='<tr><td>'+ no +'</td>';
 		data+='<td>'+ planet.name  +'</td>';
-		data+='<td>'+ planet.rotation_period +'</td></tr>';
+		data+='<td>'+ planet.diameter  +'</td>';
+		data+='<td>'+ planet.climate  +'</td>';
+		data+='<td>'+ planet.population +'</td></tr>';
 		no++;
 	})
-	document.getElementById("data").innerHTML=data;
+	data +="</table>";
+	document.getElementById("dataPlanet").innerHTML=data;
 
 </script>
 </html>
